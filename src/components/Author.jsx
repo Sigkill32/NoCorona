@@ -12,16 +12,25 @@ const Author = () => {
         <h4>Manoj Bhat</h4>
         <p>Software engineer, Math and physics enthusiast</p>
         <div className="icons">
-          <a href="https://github.com/Sigkill32" target="_blank">
+          <a
+            href="https://github.com/Sigkill32"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={git} alt="Github" />
           </a>
           <a
             href="https://stackoverflow.com/users/12893110/manoj-bhat"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={so} alt="Stack overflow" />
           </a>
-          <a href="https://www.linkedin.com/in/manoj-bhat-an/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/manoj-bhat-an/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={lnkIn} alt="LinkedIn" />
           </a>
         </div>

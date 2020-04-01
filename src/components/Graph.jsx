@@ -25,7 +25,6 @@ class Graph extends Component {
 
   render() {
     const { data, size } = this.state;
-    console.log(data);
     return (
       <div className="graph">
         {data ? (

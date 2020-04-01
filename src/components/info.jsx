@@ -3,6 +3,7 @@ import Graph from "./Graph";
 import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import Author from "./Author";
+import Comments from "./comments";
 
 const Info = () => {
   return (
@@ -138,6 +139,7 @@ const Info = () => {
       <div className="about" id="author">
         <Author />
       </div>
+      <Comments />
     </div>
   );
 };
