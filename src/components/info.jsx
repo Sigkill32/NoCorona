@@ -29,8 +29,9 @@ const Info = () => {
       <div className="section">
         <h2>Exponential growth or is it ?</h2>
         <p>
-          As we can see from the above graph, virus infections are prefect
-          examples of an exponential functions. <br />
+          As we can see from the above graph the number of infected cases is
+          growing exponentially in India. Viral infections are prefect examples
+          of an exponential functions. <br />
           But is it really how we should see it ? <br />
           One important property of an exponential function is that it keeps
           increasing infinitely. But that isn't true in the real world. The
