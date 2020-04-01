@@ -10,7 +10,7 @@ const Author = () => {
       <img src={manoj} alt="Manoj Bhat" className="author-img" />
       <div className="details">
         <h4>Manoj Bhat</h4>
-        <p>Software engineer, Math and physics enthusiast</p>
+        <p>Software engineer, Math and Physics enthusiast</p>
         <div className="icons">
           <a
             href="https://github.com/Sigkill32"

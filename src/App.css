@@ -138,6 +138,7 @@
   .section {
     padding: 0;
     padding-bottom: 40px;
+    margin-left: 10px;
   }
 
   .author {
@@ -146,5 +147,18 @@
 
   .details {
     margin-left: 15px;
+  }
+
+  .guest-details input {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .submit {
+    width: 100%;
+  }
+
+  .App {
+    margin: 0;
   }
 }
