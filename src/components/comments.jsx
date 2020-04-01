@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { db } from "../config/firebaseConf";
 
 class Comments extends Component {
   state = {
@@ -12,17 +13,32 @@ class Comments extends Component {
     this.setState({ [name]: value });
   };
 
-  handleSubmit = () => {
-    console.log(this.state);
+  writeData = async (name, email, message) => {
+    try {
+      await db.collection("Comments").add({
+        name: name,
+        email: email,
+        message: message
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  handleSubmit = async () => {
     const data = localStorage.getItem("isSent");
+    const { name, email, message } = this.state;
     if (!data) {
       localStorage.setItem("isSent", true);
+      await this.writeData(name, email, message);
+      this.setState({ name: "", email: "", message: "" });
+      alert("Your response has been recorded");
     } else {
       alert(
         "Can't submit current response. You've already submitted a response"
       );
+      this.setState({ name: "", email: "", message: "" });
     }
-    this.setState({ name: "", email: "", message: "" });
   };
 
   render() {
