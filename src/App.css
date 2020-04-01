@@ -45,9 +45,21 @@
   margin: 50px auto;
 }
 
-.author img {
+.author-img {
   width: 80px;
   border-radius: 50%;
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  border-radius: 0;
+}
+
+.icons img {
+  width: 25px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 415px) {
