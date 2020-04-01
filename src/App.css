@@ -4,12 +4,22 @@
 }
 
 .App {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
-h1 {
+.header {
   text-align: center;
   padding: 30px 0;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+.header a {
+  display: block;
+  margin-top: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 .section {
@@ -18,4 +28,39 @@ h1 {
 
 .section h2 {
   margin-bottom: 10px;
+}
+
+.graph {
+  padding: 40px 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  margin: 50px auto;
+}
+
+.author img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 415px) {
+  .section {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .author {
+    width: 90%;
+  }
+
+  .details {
+    margin-left: 15px;
+  }
 }

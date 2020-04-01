@@ -2,11 +2,16 @@ import React from "react";
 import Graph from "./Graph";
 import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
+import Author from "./Author";
 
 const Info = () => {
   return (
     <div className="info">
-      <h1>Battling covid-19, the math way</h1>
+      <div className="header">
+        <h1>Who's winning ? (vir)us ?</h1>
+        <a href="#author">By Manoj Bhat</a>
+      </div>
+      {/* <Author /> */}
       <div className="section">
         <h2>Introduction</h2>
         <p>
@@ -129,6 +134,9 @@ const Info = () => {
           be done by keeping yourself away from the infected. So let's stay home
           and make the curve hit the inflection point.
         </p>
+      </div>
+      <div className="about" id="author">
+        <Author />
       </div>
     </div>
   );
