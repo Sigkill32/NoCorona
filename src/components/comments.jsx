@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { db } from "../config/firebaseConf";
 
 class Comments extends Component {
   state = {
@@ -15,6 +14,14 @@ class Comments extends Component {
 
   handleSubmit = () => {
     console.log(this.state);
+    const data = localStorage.getItem("isSent");
+    if (!data) {
+      localStorage.setItem("isSent", true);
+    } else {
+      alert(
+        "Can't submit current response. You've already submitted a response"
+      );
+    }
     this.setState({ name: "", email: "", message: "" });
   };
 
