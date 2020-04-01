@@ -28,16 +28,19 @@ class Graph extends Component {
     return (
       <div className="graph">
         {data ? (
-          <LineChart
-            width={size.width - 50}
-            height={size.height / 2}
-            data={data}
-          >
-            <Line type="monotone" dataKey="totalconfirmed" stroke="#8884d8" />
-            <XAxis dataKey="date" />
-            <YAxis domain={[0, 2000]} />
-            <Tooltip />
-          </LineChart>
+          <>
+            <LineChart
+              width={size.width - 50}
+              height={size.height / 2}
+              data={data}
+            >
+              <Line type="monotone" dataKey="totalconfirmed" stroke="#8884d8" />
+              <XAxis dataKey="date" />
+              <YAxis domain={[0, 2000]} />
+              <Tooltip />
+            </LineChart>
+            <h4 style={{ textAlign: "center" }}>Yesterday's stats</h4>
+          </>
         ) : (
           "Loading..."
         )}

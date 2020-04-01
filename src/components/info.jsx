@@ -26,7 +26,6 @@ const Info = () => {
         </p>
       </div>
       <Graph />
-      <h4 style={{ textAlign: "center" }}>Yesterday's stats</h4>
       <div className="section">
         <h2>Exponential growth or is it ?</h2>
         <p>
