@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { db } from "../config/firebaseConf";
 
 class Comments extends Component {
   state = {
@@ -14,6 +15,7 @@ class Comments extends Component {
 
   handleSubmit = () => {
     console.log(this.state);
+    this.setState({ name: "", email: "", message: "" });
   };
 
   render() {

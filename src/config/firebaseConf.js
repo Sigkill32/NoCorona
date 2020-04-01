@@ -1,3 +1,5 @@
+import firebase, { initializeApp } from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyAO7JD1zo3zPTLgX6j4igcoQ7Oda0cUu-U",
   authDomain: "nocovid19-ade27.firebaseapp.com",
@@ -9,5 +11,8 @@ const firebaseConfig = {
   measurementId: "G-T0MGX3YSVQ"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = app.firestore();
 firebase.analytics();
+
+export { app, db };
