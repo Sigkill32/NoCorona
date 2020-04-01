@@ -37,7 +37,7 @@ const Info = () => {
           increasing infinitely. But that isn't true in the real world. The
           infection can only spread to a finite number of people even if we
           don't take any measures to prevent it's spreading, because human
-          population is finite. So the exponential spreading has to stop at
+          population is finite. So the exponential spreading has to stop at some
           point and revert back.
         </p>
       </div>
@@ -50,11 +50,11 @@ const Info = () => {
           </a>
           ).
           <BlockMath>{"f(x) = \\frac{L}{1+e^{-k(x-x_{0})}}"}</BlockMath>
-          It was introduced to depict population growth. The population may grow
-          exponentially only till it hits a certain number but it cannot become
+          It was introduced to depict population growth. Population grows
+          exponentially only till it hits a certain number. It cannot become
           infinite. The same function can be used to depict the spreading of a
-          viral infection. The important property of this function that is
-          useful to us is it's inflection point. inflection point is where the
+          viral infection. An important property of this function that is useful
+          to us is it's inflection point. Inflection point is where the
           exponential trend starts to reverse. Hitting this point would mean
           that we are returning back to normalcy.
         </p>
@@ -63,12 +63,12 @@ const Info = () => {
         <h2>Finding the closest fitting curve</h2>
         <p>
           The real challenge is to find the closest fitting curve. There are a
-          number of things that could go wrong. To make proper predictions, we
-          need clean data. As the testing per million population of India is the
-          lowest in the world (21/million when I wrote this article), the real
-          numbers are unknown. With this kind of inconsistent data it isn't
-          possible to predict the inflection point. But we could still
-          approximate the trend. Lets assume the following.
+          number of things that could go wrong in the process. To make proper
+          predictions, we need clean data. As the testing per million population
+          of India is the lowest in the world (21/million when I wrote this
+          article), the real numbers are unknown. With this kind of inconsistent
+          data it isn't possible to predict the inflection point. But we could
+          still approximate the trend. Lets assume the following.
           <br />
           <br />
           <InlineMath>{"N_{d}"}</InlineMath> = number of people already infected
@@ -119,10 +119,10 @@ const Info = () => {
           </BlockMath>
           <br />
           <br />
-          While we are on the exponential part, this factor stays well above{" "}
-          <InlineMath>1</InlineMath>. When the growth factor hits closer to{" "}
-          <InlineMath>1</InlineMath> it's a sign that we've hit the inflection
-          point.
+          While we are on the exponential part of the logistic curve, this
+          factor stays well above <InlineMath>1</InlineMath>. When the growth
+          factor hits closer to <InlineMath>1</InlineMath> and roughly remains
+          the same, it's a sign that we've hit the inflection point.
           <br />
         </p>
       </div>
