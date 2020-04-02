@@ -31,7 +31,7 @@ const Info = () => {
         <p>
           As we can see from the above graph the number of infected cases is
           growing exponentially in India. Viral infections are prefect examples
-          of an exponential functions. <br />
+          of exponential functions. <br />
           But is it really how we should see it ? <br />
           One important property of an exponential function is that it keeps
           increasing infinitely. But that isn't true in the real world. The
