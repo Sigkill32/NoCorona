@@ -101,7 +101,7 @@ const Info = () => {
           <BlockMath>{"N_{d+1} = (1 + E_{avg} * p)N_{d}"}</BlockMath>
           <br />
           <br />
-          We can observe that we are multiplying by a constant grater than one
+          We can observe that we are multiplying by a constant greater than one
           each day get that day's infection count.
           <br />
           Number of cases of <InlineMath>d</InlineMath> days.
