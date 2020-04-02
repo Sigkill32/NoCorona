@@ -86,7 +86,9 @@ const Info = () => {
           factor to account for the probability that the person you are exposed
           to is already infected.
           <br />
-          <BlockMath>{"p = 1 - \\frac{N_{d}}{Total Population}"}</BlockMath>
+          <BlockMath>
+            {"p \\propto 1 - \\frac{N_{d}}{Total Population}"}
+          </BlockMath>
           <br />
           Number of new cases on a given day{" "}
           <BlockMath>{"\\Delta N_{d} = E_{avg} * p * N_{d}"}</BlockMath>
