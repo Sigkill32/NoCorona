@@ -86,7 +86,7 @@ const Info = () => {
           factor to account for the probability that the person you are exposed
           to is already infected.
           <br />
-          <BlockMath>{"p = 1 - \\frac{N}{Total Population}"}</BlockMath>
+          <BlockMath>{"p = 1 - \\frac{N_{d}}{Total Population}"}</BlockMath>
           <br />
           Number of new cases on a given day{" "}
           <BlockMath>{"\\Delta N_{d} = E_{avg} * p * N_{d}"}</BlockMath>
@@ -103,7 +103,7 @@ const Info = () => {
           each day get that day's infection count.
           <br />
           Number of cases of <InlineMath>d</InlineMath> days.
-          <BlockMath>{"N_{d+1} = N_{d}(1 + E_{avg} * p)^d"}</BlockMath>
+          <BlockMath>{"N_{d+1} = N_{0}(1 + E_{avg} * p)^d"}</BlockMath>
           <br />
           <br />
           If you were to plot this equation on a graph we'll end up with a
