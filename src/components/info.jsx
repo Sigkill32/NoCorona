@@ -16,11 +16,11 @@ const Info = () => {
       <div className="section">
         <h2>Introduction</h2>
         <p>
-          Corna virus has become a part of our lives. A pandamic that will shape
-          human history as we know it. I certainly don't need to get into the
-          details of the infection as everyone is well aware of it's nature. But
-          I would like to address something that is less spoken. We see lot of
-          numbers on the news, what does it all mean ? <br />
+          Corona virus has become a part of our lives. A pandamic that will
+          shape human history as we know it. I certainly don't need to get into
+          the details of the infection as everyone is well aware of it's nature.
+          But I would like to address something that is less spoken. We see lot
+          of numbers on the news, what does it all mean ? <br />
           where exactly are we in the battle against the pandamic ?
           <br />I will try to answer these questions in this article.
         </p>
