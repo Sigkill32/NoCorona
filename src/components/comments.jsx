@@ -54,13 +54,15 @@ class Comments extends Component {
               onChange={this.handleChange}
               value={name}
               placeholder="Your Name"
+              required
             />
             <input
-              type="text"
+              type="email"
               name="email"
               onChange={this.handleChange}
               value={email}
               placeholder="Your Email"
+              required
             />
           </div>
           <input
@@ -70,6 +72,7 @@ class Comments extends Component {
             value={message}
             placeholder="Your Message"
             className="message"
+            required
           />
           <button onClick={this.handleSubmit} className="submit">
             Submit
