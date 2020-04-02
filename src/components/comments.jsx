@@ -13,12 +13,22 @@ class Comments extends Component {
     this.setState({ [name]: value });
   };
 
+  getDate = () => {
+    const date = new Date();
+    const currentDate = `${date.getDate()} - ${date.getMonth()} - ${date.getFullYear()}`;
+    const currentTime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    return { currentDate, currentTime };
+  };
+
   writeData = async (name, email, message) => {
+    const { currentDate, currentTime } = this.getDate();
     try {
       await db.collection("Comments").add({
         name: name,
         email: email,
-        message: message
+        message: message,
+        commentDate: currentDate,
+        commentTime: currentTime
       });
     } catch (error) {
       console.log(error);
