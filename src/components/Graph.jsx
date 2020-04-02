@@ -36,7 +36,7 @@ class Graph extends Component {
             >
               <Line type="monotone" dataKey="totalconfirmed" stroke="#8884d8" />
               <XAxis dataKey="date" />
-              <YAxis domain={[0, 2000]} />
+              <YAxis domain={[0, 3000]} />
               <Tooltip />
             </LineChart>
             <h4 style={{ textAlign: "center" }}>Yesterday's stats</h4>
